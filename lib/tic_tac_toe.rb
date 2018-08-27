@@ -1,3 +1,4 @@
+require 'pry'
 class TicTacToe
   def initialize
     @board = Array.new(9, " ")
@@ -42,6 +43,7 @@ def current_player
   end
 end
 def turn
+  binding.pry
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
